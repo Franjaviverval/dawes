@@ -4,7 +4,7 @@ const unit = document.querySelector('#controls__unit');
 const exercise = document.querySelector('#controls__exercise');
 
 const exercises = [
-    ['01_Array1.php', '02_ArrayAsociativo.php'],
+    ['01_Array1.php', '02_ArrayAsociativo.php', '03_Personas.php'],
     //['02_otro.php', '03_otromas.php']
 ];
 
