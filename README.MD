@@ -9,7 +9,8 @@
 
 ## Tema 1
 
-![alt text](screenshots/tema_1/ejercicio7.1.png)
-![alt text](screenshots/tema_1/ejercicio7.2.png)
-![alt text](screenshots/tema_1/ejercicio7.3.png)
+![alt text](screenshots/tema_1/7.0.1_Array1.png)
+![alt text](screenshots/tema_1/7.0.2_ArrayAsociativo.png)
+![alt text](screenshots/tema_1/7.0.3_Personas.png)
+![alt text](screenshots/tema_1/7.0.4_Garaje.png)
 </div>
