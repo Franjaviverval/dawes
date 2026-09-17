@@ -1,4 +1,6 @@
 <?php
+require_once('../templates/page.php');
+initPage('03_Personas.php');
 
 $personas = array(
   array('nombre'=>'Aitor', 'altura'=>170, 'email'=>'aitor@correo.com'),
@@ -39,4 +41,6 @@ $resultado = $resultado.'
 </table>';
 
 echo $resultado;
+
+endPage();
 ?>

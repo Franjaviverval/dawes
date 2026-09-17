@@ -1,4 +1,6 @@
 <?php
+require_once('../templates/page.php');
+initPage('02_ArrayAsociativo.php');
 
 $my_array = [];
 
@@ -20,4 +22,5 @@ echo '<p>';
 print_r($resultado);
 echo '</p>';
 
+endPage();
 ?>

@@ -1,4 +1,6 @@
 <?php
+require_once('../templates/page.php');
+initPage('01_Array1.php');
 
 $mi_array = [];
 
@@ -26,4 +28,5 @@ echo '<p><br>'.
 .'La media es: '.array_sum($mi_array)/count($mi_array)
 .'</p>';
 
+endPage();
 ?>
