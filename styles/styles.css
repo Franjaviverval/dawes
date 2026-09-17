@@ -46,16 +46,22 @@ body {
     justify-items: center;
 }
 
+.console__statement {
+    padding: 10px 0;
+    margin-bottom: 25px;
+    border: 1px dashed var(--main-color);
+    font-size: 1.75rem;
+    color: var(--main-color);
+}
+
 table {
-    margin: 0 auto;    
-}
-
-th {
+    margin: 0 auto;
+    border-collapse: collapse;
     border: 2px solid var(--main-color);
-    padding: 5px;
 }
 
+th,
 td {
-    border: 1px solid var(--main-color);
+    border: 2px solid var(--main-color);
     padding: 5px;
 }

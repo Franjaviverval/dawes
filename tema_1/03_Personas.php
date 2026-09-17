@@ -2,6 +2,14 @@
 require_once('../templates/page.php');
 initPage('03_Personas.php');
 
+printStatement('
+Mediante un array bidimensional, almacena el nombre, altura y email de 5 personas. Para ello, crea
+un array de personas, siendo cada persona un array asociativo: [ [‘nombre’=>‘Aitor’, ‘altura’=>182,
+‘email’=>‘aitor@correo.com’],[…],… ] Posteriormente, recorre el array y muéstralo en una tabla
+HTML.
+');
+
+
 $personas = array(
   array('nombre'=>'Aitor', 'altura'=>170, 'email'=>'aitor@correo.com'),
   array('nombre'=>'Sandra', 'altura'=>173, 'email'=>'sandra@correo.com'),

@@ -44,4 +44,8 @@ function endPage(){
 	echo drawEndPage();
 }
 
+function printStatement(string $statement){
+	echo '<div class=console__statement>'.$statement.'</div>';
+}
+
 ?>
