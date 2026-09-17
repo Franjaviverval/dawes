@@ -34,14 +34,11 @@ function drawEndConsole(){
 }
 
 function initPage(string $title = 'Ejercicio php'){
-	echo drawInitPage($title);
-	echo drawHeader($title);
-	echo drawInitConsole();
+	echo drawInitPage($title).drawHeader($title).drawInitConsole();
 }
 
 function endPage(){
-	echo drawEndConsole();
-	echo drawEndPage();
+	echo drawEndConsole().drawEndPage();
 }
 
 function printStatement(string $statement){
