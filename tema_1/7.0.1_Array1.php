@@ -1,6 +1,6 @@
 <?php
 require_once('../templates/page.php');
-initPage('01_Array1.php');
+initPage('7.0.1_Array1.php');
 
 printStatement('
 <p>Rellena un array con 5 números aleatorios comprendidos entre el 0 y el 99,y luego muéstralo en una lista desordenada. Para crear un número aleatorio,utiliza la función rand(inicio,fin)=>$num = rand (0, 99)<p>
