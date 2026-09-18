@@ -13,4 +13,5 @@
 ![alt text](screenshots/tema_1/7.0.2_ArrayAsociativo.png)
 ![alt text](screenshots/tema_1/7.0.3_Personas.png)
 ![alt text](screenshots/tema_1/7.0.4_Garaje.png)
+![alt text](screenshots/tema_1/7.0.5_ArrayBidimensional.png)
 </div>

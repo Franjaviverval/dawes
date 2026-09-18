@@ -32,7 +32,7 @@ body {
 
 .console {
     margin: 15px auto;
-    background-color: #222;
+    background-color: #444;
     color: var(--console-color);
     min-height: 30vh;
     width: 90vw;
