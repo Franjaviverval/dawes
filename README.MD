@@ -24,5 +24,7 @@
 ![alt text](screenshots/tema_2/7.0.1_ParametrosVariables.png)
 ![alt text](screenshots/tema_2/7.0.2_CompruebaHora.png)
 ![alt text](screenshots/tema_2/7.0.3_Matematicas.png)
+![alt text](screenshots/tema_2/7.0.4_Login.png)
+![alt text](screenshots/tema_2/7.1.1_FrasesImpares.png)
 
 </div>
