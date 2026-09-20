@@ -17,9 +17,9 @@ function showTime(string $timeString, bool $isValid){
   $code = $timeString.' -> ';
 
   if($isValid)
-    $code .= '<span style="color: #00BB00;">Hora introducida es válida</span>';
+    $code .= '<span style="color: #00BB00;">La hora introducida es válida</span>';
   else
-    $code .= '<span style="color: #FF0000;">Hora introducida es inválida</span>'; 
+    $code .= '<span style="color: #FF0000;">La hora introducida es inválida</span>'; 
   
   return $code.'<br>';
 }

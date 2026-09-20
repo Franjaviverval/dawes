@@ -23,5 +23,6 @@
 
 ![alt text](screenshots/tema_2/7.0.1_ParametrosVariables.png)
 ![alt text](screenshots/tema_2/7.0.2_CompruebaHora.png)
+![alt text](screenshots/tema_2/7.0.3_Matematicas.png)
 
 </div>
