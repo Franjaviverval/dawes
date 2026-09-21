@@ -8,7 +8,7 @@ printStatement('
 <p><strong>login.php</strong>:el formulariode entrada, que solicita el usuario y contraseña.
 <strong>compruebaLogin.php</strong>: recibe los datos y comprueba si son correctos(los usuarios se guardan en un array asociativo) pasando el control mediante el uso de include a:</p>
 <p><strong>ok.php</strong>: El usuario introducido es correcto</p>
-<p>ko.php: El usuario es incorrecto. Informar si ambos están mal o solo la contraseña. Volver a mostrar el formulario de acceso</p>
+<p><strong>ko.php</strong>: El usuario es incorrecto. Informar si ambos están mal o solo la contraseña. Volver a mostrar el formulario de acceso</p>
 ');
 
 echo 
