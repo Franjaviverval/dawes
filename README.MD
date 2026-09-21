@@ -26,5 +26,8 @@
 ![alt text](screenshots/tema_2/7.0.3_Matematicas.png)
 ![alt text](screenshots/tema_2/7.0.4_Login.png)
 ![alt text](screenshots/tema_2/7.1.1_FrasesImpares.png)
-
+![alt text](screenshots/tema_2/7.1.2_Analizador.png)
+![alt text](screenshots/tema_2/7.1.3_AnalizadorWC.png)
+![alt text](screenshots/tema_2/7.1.4_Cani.png)
+![alt text](screenshots/tema_2/7.1.5_Palindromo.png)
 </div>
