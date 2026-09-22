@@ -30,4 +30,6 @@
 ![alt text](screenshots/tema_2/7.1.3_AnalizadorWC.png)
 ![alt text](screenshots/tema_2/7.1.4_Cani.png)
 ![alt text](screenshots/tema_2/7.1.5_Palindromo.png)
+![alt text](screenshots/tema_2/7.1.6_CasasRuralesTelefonos.png)
+![alt text](screenshots/tema_2/7.1.7_Plantillas.png)
 </div>
