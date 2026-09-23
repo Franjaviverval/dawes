@@ -3,6 +3,7 @@
 # Índice
 - [Tema 1](#tema-1)
 - [Tema 2](#tema-2)
+- [Tema 3](#tema-3)
 
 
 <div id=tema-1>
@@ -32,4 +33,13 @@
 ![alt text](screenshots/tema_2/7.1.5_Palindromo.png)
 ![alt text](screenshots/tema_2/7.1.6_CasasRuralesTelefonos.png)
 ![alt text](screenshots/tema_2/7.1.7_Plantillas.png)
+
+</div>
+
+<div id=tema-1>
+
+## Tema 3
+
+![alt text](screenshots/tema_3/5.0.1_Calculadora.png)
+
 </div>
