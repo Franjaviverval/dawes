@@ -5,9 +5,9 @@ function validateTime(string $timeString, string $separator = ':') : bool{
   $timeElements = explode($separator, $timeString);
 
   if(count($timeElements) != 3  ||
-           $timeElements[0] < 0 || $timeElements[0] > 24 ||
-           $timeElements[1] < 0 || $timeElements[1] > 60 ||
-           $timeElements[2] < 0 || $timeElements[2] > 60)
+           $timeElements[0] < 0 || $timeElements[0] > 23 ||
+           $timeElements[1] < 0 || $timeElements[1] > 59 ||
+           $timeElements[2] < 0 || $timeElements[2] > 59)
     return false;
 
   return true;
