@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <header class="header-page">
+    <h1 class="title-page">5.0.2_Formulario</h1>
+  </header>
+  <article class="text-light">
+    <form class="d-flex flex-column mt-5 align-items-center vh-100" method="post"
+      action="5.0.2_Formulario.php">
+      <h1 class="mb-4">Registro</h1>
+      <div class="row w-50 gx-5 border border-light rounded-3 p-4">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="input-name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="input-name" name="name">
+          </div>
+          <div class="mb-3">
+            <label for="input-lastname" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="input-lastname" name="lastname">
+          </div>
+          <div class="mb-3">
+            <label for="input-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="input-email" name="email">
+          </div>
+          <div class="mb-3">
+            <label for="input-url" class="form-label">URL Página personal</label>
+            <input type="url" class="form-control" id="input-url" name="url">
+          </div>
+          <div class="mb-3">
+            <label for="input-roomates" class="form-label"> Número de convivientes</label>
+            <input type="number" class="form-control" id="input-roomates" name="roomates">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-4 text-center">
+            <label class="form-label d-block">Sexo</label>
+            <div class="d-flex justify-content-center gap-4">
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="input-man" name="genre" value="hombre">
+                <label class="form-check-label" for="input-man">Hombre</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="input-woman" name="genre" value="mujer">
+                <label class="form-check-label" for="input-woman">Mujer</label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 text-center">
+            <label class="form-label">Aficiones</label>
+            <div class="d-flex flex-wrap gap-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="aficion-deporte" name="aficiones[]" value="deporte">
+                <label class="form-check-label" for="aficion-deporte">Deporte</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="aficion-musica" name="aficiones[]" value="musica">
+                <label class="form-check-label" for="aficion-musica">Música</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="aficion-cine" name="aficiones[]" value="cine">
+                <label class="form-check-label" for="aficion-cine">Cine</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="aficion-videojuegos" name="aficiones[]"
+                  value="videojuegos">
+                <label class="form-check-label" for="aficion-videojuegos">Videojuegos</label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="input-menu" class="form-label">Menú favorito</label>
+            <select class="form-select" id="input-menu" name="menu[]" multiple>
+              <option value="pizza">Pizza</option>
+              <option value="hamburguesa">Hamburguesa</option>
+              <option value="pasta">Pasta</option>
+              <option value="ensalada">Ensalada</option>
+            </select>
+          </div>
+          <div class="col-12 mb-3">
+            <button type="submit" class="btn btn-primary w-100 py-4">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </article>
+</body>
+
+</html>
