@@ -1,5 +1,5 @@
 <?php
-require_once('../templates/page.php');
+require_once('../../templates/page.php');
 
 $backgroundColor = 'white';
 $title = '5.0.1_Ejercicio_Cookies';
@@ -13,7 +13,7 @@ if(isset($_COOKIE['colorusu']) && isset($_COOKIE['nombreusu'])){
 }
 
 
-echo drawInitPage("'5.0.1_Ejercicio_Cookies'").drawHeader("$title")
+echo drawInitPage('5.0.1_Ejercicio_Cookies', '../../styles/styles.css').drawHeader("$title")
      ."<article class=\"console\" style=\"background-color: $backgroundColor; color: var(--main-color);\">";
 
 echo "<p style=\"text-align: center;\">$message</p>";

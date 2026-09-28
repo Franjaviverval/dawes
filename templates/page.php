@@ -1,5 +1,5 @@
 <?php
-function drawInitPage(string $title = 'Ejercicio php') : string{
+function drawInitPage(string $title = 'Ejercicio php', string $style="../styles/styles.css") : string{
 	return 
 	'<!DOCTYPE html>
 	<html lang="es">
@@ -7,7 +7,7 @@ function drawInitPage(string $title = 'Ejercicio php') : string{
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>'.$title.'</title>
-			<link rel="stylesheet" href="../styles/styles.css">
+			<link rel="stylesheet" href='.$style.'>
 	</head>
 	<body>';
 }
@@ -33,8 +33,8 @@ function drawEndConsole(){
 	return '</article>';
 }
 
-function initPage(string $title = 'Ejercicio php'){
-	echo drawInitPage($title).drawHeader($title).drawInitConsole();
+function initPage(string $title = 'Ejercicio php', string $style= "../styles/styles.css"){
+	echo drawInitPage($title, $style).drawHeader($title).drawInitConsole();
 }
 
 function endPage(){

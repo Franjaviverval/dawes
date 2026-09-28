@@ -1,7 +1,7 @@
 <?php
-require_once('../templates/page.php');
+require_once('../../templates/page.php');
 
-initPage('Preferencias.php');
+initPage('Preferencias.php','../../styles/styles.css');
 
 echo '<form action="guarda_prefs.php" method="post" style="margin: 0 auto; width: fit-content;border: 1px solid var(--accent-color); padding: 30px;">
 
