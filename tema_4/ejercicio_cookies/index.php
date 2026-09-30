@@ -17,8 +17,8 @@ echo drawInitPage('5.0.1_Ejercicio_Cookies', '../../styles/styles.css').drawHead
      ."<article class=\"console\" style=\"background-color: $backgroundColor; color: var(--main-color);\">";
 
 echo "<p style=\"text-align: center;\">$message</p>";
-echo '<br><br><a href="preferencias.php" style="display:block; text-align:center;"><button style="font-size:2rem;">Configurar</button></a><br>';
-echo '<a href="borrar_prefs.php" style="display:block; text-align:center;"><button style="font-size:1.5rem;">Borrar configuración</button></a>';
+echo '<br><br><a href="preferencias.php" style="display:block; text-align:center;"><button class="simple-button";">Configurar</button></a><br>';
+echo '<a href="borrar_prefs.php" style="display:block; text-align:center;"><button class="simple-button">Borrar configuración</button></a>';
 
 endPage();
 ?>

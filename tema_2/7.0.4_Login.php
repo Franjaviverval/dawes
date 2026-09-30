@@ -10,16 +10,23 @@ printStatement('
 <p><strong>ok.php</strong>: El usuario introducido es correcto</p>
 <p><strong>ko.php</strong>: El usuario es incorrecto. Informar si ambos están mal o solo la contraseña. Volver a mostrar el formulario de acceso</p>
 ');
+?>
 
-echo 
-'<form action="7.0.4_CompruebaLogin.php" method="post" style="margin: 0 auto; width: fit-content;">
-  <label for="input-name" style="font-size: 4rem; display: block; text-align: center;">Usuario</label>
-  <input name="user" id=input-name placeholder="Nombre de usuario" style="font-size: 2.5rem; padding: 10px" required><br><br>
-  <label for="input-password" style="font-size: 4rem; display: block; text-align: center;">Contraseña</label>
-  <input type="password" name="password" id=input-password placeholder="Contraseña" style="font-size: 2.5rem; padding: 10px;" required><br><br>
-  <button type="submit" style="font-size: 2.5rem; padding: 10px 15px; display: block; margin: 0 auto;">Acceder</button>
-</form>';
+<form action="7.0.4_CompruebaLogin.php" method="post" class="simple-form">
+  <div class="simple-form__element">
+    <label for="input-name" class="simple-label">Usuario</label>
+    <input name="user" class="simple-input" placeholder="Usuario" required>
+  </div>
+  <div class="simple-form__element">
+    <label for="input-password" class="simple-label">Contraseña</label>
+    <input type="password" name="password" id=input-password placeholder="Contraseña" class="simple-input" required>
+  </div>
+  <nav class="simple-form__nav">
+    <button type="submit" class="simple-button">Acceder</button>
+  </nav>
+</form>
 
 
+<?php
 endPage();
 ?>

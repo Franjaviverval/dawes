@@ -66,3 +66,61 @@ td {
     border: 2px solid var(--main-color);
     padding: 10px;
 }
+
+.simple-form {
+    border: 1px solid var(--accent-color);
+    margin: 0 auto;
+    padding: 30px;
+    gap: 20px;
+    width: fit-content;
+    background-color: #374151;
+    box-shadow: 0 0 40px 0 black;
+}
+
+.simple-label {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.simple-form__element {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;    
+    padding: 25px;
+}
+
+.simple-input {
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 15px;
+    outline: 1px solid var(--console-color);
+    border: none;    
+    background-color: #555;
+}
+
+.simple-input:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+.simple-input::placeholder {
+    color: #cb8;
+}
+
+.simple-form__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simple-button {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    background-color: rgb(52, 59, 72);
+    color: var(--main-color);
+    border-radius: 10px;
+}
+
+.simple-button:hover {
+    font-weight: bold;
+    outline: 2px solid var(--accent-color);
+}
