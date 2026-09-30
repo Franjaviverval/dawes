@@ -70,8 +70,7 @@ td {
 .simple-form {
     border: 1px solid var(--accent-color);
     margin: 0 auto;
-    padding: 30px;
-    gap: 20px;
+    padding: 20px;    
     width: fit-content;
     background-color: #374151;
     box-shadow: 0 0 40px 0 black;
@@ -86,7 +85,7 @@ td {
     display: flex;
     flex-direction: column;
     gap: 15px;    
-    padding: 25px;
+    padding: 15px 20px;
 }
 
 .simple-input {
@@ -110,6 +109,7 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .simple-button {
