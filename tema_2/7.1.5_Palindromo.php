@@ -17,9 +17,9 @@ function isPalindrome(string $sentence) : bool{
 
 function show(string $sentence){
   if(isPalindrome($sentence))
-    echo $sentence.' es palíndromo<br>';
+    echo $sentence.' => <span>es palíndromo</span><br>';
   else
-    echo $sentence.' no es palíndromo<br>';
+    echo $sentence.' => <span style="color: crimson;">no es palíndromo</span><br>';
 }
 
 
