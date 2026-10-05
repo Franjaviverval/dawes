@@ -52,6 +52,7 @@
 ## Tema 4
 
 ![alt text](screenshots/tema_4/5.0.1_Ejercio_Cookies.png)
+![alt text](screenshots/tema_4/5.0.2_Calificaciones.png)
 
 </div>
 
