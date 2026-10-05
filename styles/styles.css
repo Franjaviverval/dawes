@@ -69,11 +69,17 @@ td {
 
 .simple-form {
     border: 1px solid var(--accent-color);
-    margin: 0 auto;
-    padding: 20px;    
+    margin: 0px auto;
+    padding: 20px;
     width: fit-content;
     background-color: #374151;
     box-shadow: 0 0 40px 0 black;
+}
+
+.simple-form__title {
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 .simple-label {
@@ -84,7 +90,7 @@ td {
 .simple-form__element {
     display: flex;
     flex-direction: column;
-    gap: 15px;    
+    gap: 15px;
     padding: 15px 20px;
 }
 
@@ -93,8 +99,9 @@ td {
     padding: 10px;
     border-radius: 15px;
     outline: 1px solid var(--console-color);
-    border: none;    
+    border: none;
     background-color: #555;
+    color: var(--light-font-color);
 }
 
 .simple-input:focus {
@@ -121,6 +128,11 @@ td {
 }
 
 .simple-button:hover {
-    font-weight: bold;
     outline: 2px solid var(--accent-color);
+}
+
+.simple-button:active {
+    outline: 2px solid var(--accent-color);
+    background-color: var(--main-color);
+    color: rgb(52, 59, 72);
 }
