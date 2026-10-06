@@ -97,6 +97,7 @@ td {
 .simple-input {
     font-size: 1.5rem;
     padding: 10px;
+    min-width: 100px;
     border-radius: 15px;
     outline: 1px solid var(--console-color);
     border: none;

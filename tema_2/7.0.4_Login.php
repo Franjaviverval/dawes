@@ -15,7 +15,7 @@ printStatement('
 <form action="7.0.4_CompruebaLogin.php" method="post" class="simple-form">
   <div class="simple-form__element">
     <label for="input-name" class="simple-label">Usuario</label>
-    <input name="user" class="simple-input" placeholder="Usuario" required>
+    <input name="user" class="simple-input" id="input-name" placeholder="Usuario" required>
   </div>
   <div class="simple-form__element">
     <label for="input-password" class="simple-label">Contraseña</label>
