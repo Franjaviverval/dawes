@@ -9,7 +9,7 @@ function countLetters(string $sentence) : int{
   $total = 0;
 
   for($i = 0; $i < strlen($sentence); $i++){   
-    if(strtolower($sentence[$i]) >= 'a' && strtolower($entence[$i]) <= 'z')
+    if(strtolower($sentence[$i]) >= 'a' && strtolower($sentence[$i]) <= 'z')
       $total++;
   }
 

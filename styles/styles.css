@@ -53,6 +53,9 @@ body {
     border: 1px dashed var(--accent-color);
     font-size: 1.75rem;
     color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 table {
