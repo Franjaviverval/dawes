@@ -1,0 +1,77 @@
+@import '../styles/styles.css';
+
+.file-input::file-selector-button {
+   display: none;
+}
+
+.upload {
+   margin: 40px 0;
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   gap: 30px;
+}
+
+.messages {
+   box-sizing: border-box;
+   border: 1px solid var(--accent-color);
+   padding: 20px;
+   background-color: #374151;
+   box-shadow: 0 0 40px 0 black;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.message {
+   font-size: 2rem;
+   text-align: center;
+}
+
+.message_ok {
+   color: greenyellow;
+}
+
+.message_error {
+   color: crimson;
+}
+
+.messages__image {
+   display: block;
+   max-height: 20dvh;
+}
+
+.messages__image>img {
+   width: auto;
+   max-height: 20dvh;
+}
+
+.upload-images {
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+   width: 80dvw;
+}
+
+.card {
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   height: 200px;
+}
+
+.card>img {
+   width: 100%;
+   aspect-ratio: 1/1;
+}
+
+.card>p {
+   color: var(--main-color);
+   font-size: 2rem;
+   text-align: center;
+}

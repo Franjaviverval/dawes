@@ -83,6 +83,7 @@ td {
     font-size: 1.75rem;
     margin-bottom: 25px;
     text-align: center;
+    color: var(--accent-color);
 }
 
 .simple-label {
