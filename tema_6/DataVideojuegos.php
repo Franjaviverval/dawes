@@ -84,7 +84,7 @@ class DataVideojuegos{
       }
    }
 
-   public function borrar($id){
+   public function borrar(int $id) : void{
       if(!$this->isConnected())
          return;
 
@@ -104,25 +104,31 @@ class DataVideojuegos{
    }
 }
 
+function crear(DataVideojuegos &$database) : void{
+   $titulo = trim($_POST['titulo'] ?? '') ;
+   $genero = trim($_POST['genero'] ?? '') ;
+   $precio = (float)($_POST['precio'] ?? 0);
+
+   if($titulo !== '' && $genero !== '')
+      $database->insertar($titulo, $genero, $precio); 
+}
+
+function borrar(DataVideojuegos &$database, int $id) : void{
+   $database->borrar($id);
+}
+
 // Ejecucion
 
 $database = new DataVideojuegos();
 
-if($_SERVER['REQUEST_METHOD'] === 'POST'){    
-   if(isset($_POST['borrar-id'])){
-      $database->borrar($_POST['borrar-id']);
-   }
-   else{
-      $titulo = trim($_POST['titulo']) ?? '';
-      $genero = trim($_POST['genero']) ?? '';
-      $precio = $_POST['precio'] ?? 0;
+if($_SERVER['REQUEST_METHOD'] === 'POST')    
+   if(isset($_POST['borrar-id']))
+      borrar($database, (int)$_POST['borrar-id']);   
+   else if(isset($_POST['add-game']))
+      crear($database);
+      
 
-      if($titulo !== '' && $genero !== '')
-         $database->insertar($titulo, $genero, $precio); 
-   }
-}
 
 $data = $database->leer() ?? [];
-
 $database->liberar();
 ?>
