@@ -12,7 +12,7 @@ initPage('Videojuegos');
     <input name="titulo" class="simple-input" id="titulo" placeholder="Título" required>
     <label for="genero" class="simple-label">Género</label>
     <input name="genero" class="simple-input" id="genero" placeholder="Género" required>
-    <label for="'precio'" class="simple-label">Precio</label>
+    <label for="precio" class="simple-label">Precio</label>
     <input type="number" name="precio" class="simple-input" id="precio" min=0 step=0.01 placeholder="0.0" required>
   </div>  
   <nav class="simple-form__nav">
