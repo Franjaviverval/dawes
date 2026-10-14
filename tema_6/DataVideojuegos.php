@@ -130,7 +130,6 @@ function leer(){
 
 // Ejecucion
 
-
 if($_SERVER['REQUEST_METHOD'] === 'POST')    
    if(isset($_POST['borrar-id']))
       borrar((int)$_POST['borrar-id']);   
