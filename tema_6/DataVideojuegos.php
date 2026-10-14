@@ -1,12 +1,6 @@
 <?php
 
 class DataVideojuegos{
-  private $host;
-  private $nombreBD;
-  private $usuario;
-  private $password;
-  private $estado;
-  private $pdo;
 
   public function __Construct(){
     $this->host = 'localhost';
@@ -14,8 +8,10 @@ class DataVideojuegos{
     $this->usuario = 'root';
     $this->password = '';
     $this->estado = '';
+    $this->pdo = null;
     $this->connect();
   }
+
 
   public function connect() : bool{
       try{
@@ -104,31 +100,43 @@ class DataVideojuegos{
    }
 }
 
-function crear(DataVideojuegos &$database) : void{
+//Funciones 
+
+function crear() : void{
+   $database = new DataVideojuegos();
+
    $titulo = trim($_POST['titulo'] ?? '') ;
    $genero = trim($_POST['genero'] ?? '') ;
    $precio = (float)($_POST['precio'] ?? 0);
 
    if($titulo !== '' && $genero !== '')
       $database->insertar($titulo, $genero, $precio); 
+
+   $database->liberar();
 }
 
-function borrar(DataVideojuegos &$database, int $id) : void{
+function borrar(int $id) : void{
+   $database = new DataVideojuegos();
    $database->borrar($id);
+   $database->liberar();
+}
+
+function leer(){
+   $database = new DataVideojuegos();
+   $data = $database->leer() ?? [];
+   $database->liberar();
+   return $data;
 }
 
 // Ejecucion
 
-$database = new DataVideojuegos();
 
 if($_SERVER['REQUEST_METHOD'] === 'POST')    
    if(isset($_POST['borrar-id']))
-      borrar($database, (int)$_POST['borrar-id']);   
+      borrar((int)$_POST['borrar-id']);   
    else if(isset($_POST['add-game']))
-      crear($database);
-      
+      crear();    
 
+$data = leer();
 
-$data = $database->leer() ?? [];
-$database->liberar();
 ?>
