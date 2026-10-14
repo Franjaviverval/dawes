@@ -32,6 +32,11 @@ function uploadImage(&$message) : bool{
       return false;
    }
 
+   if(!exif_imagetype($_FILES['file']['tmp_name'])){
+      $message = '<p class="message message_error">Error debe subir una imagen</p>';
+      return false;
+   }
+
    $size = getimagesize($_FILES['file']['tmp_name']);
    move_uploaded_file($_FILES['file']['tmp_name'], "uploads/{$_FILES['file']['name']}");
    $message = '<p class="message message_ok">Imagen '.$_FILES['file']['name'].' subida correctamente</p>'; 
