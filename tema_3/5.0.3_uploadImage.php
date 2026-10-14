@@ -38,7 +38,7 @@ function uploadImage(&$message) : bool{
    }
 
    $size = getimagesize($_FILES['file']['tmp_name']);
-   move_uploaded_file($_FILES['file']['tmp_name'], "uploads/{$_FILES['file']['name']}");
+   move_uploaded_file($_FILES['file']['tmp_name'], "uploads/{$_FILES['file']['name']}");  
    $message = '<p class="message message_ok">Imagen '.$_FILES['file']['name'].' subida correctamente</p>'; 
    $message .= '<p class="message message_ok">tamaño: '."{$size[0]}X{$size[1]}".'</p>';
    return true;
@@ -50,8 +50,8 @@ function showCards(){
    foreach($files as $file){
       if($file == '.' || $file == '..')
          continue;      
-      $code .= '<article class=card> <img src="uploads/'.$file.'">';
-      $code .= "<p>{$file}</p>".'</article>';
+      $code .= '<article class=card> <img src="uploads/'.$file.'">';      
+      $code .= "<p>".explode('.', $file)[0]."</p>".'</article>';
    }
    echo $code;
 }
