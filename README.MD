@@ -67,3 +67,11 @@
 ![alt text](screenshots/tema_5/5.0.1_Clases.png)
 
 </div>
+
+<div id=tema-7>
+
+## Tema 7
+
+![alt text](screenshots/tema_7/01_mvc.png)
+
+</div>

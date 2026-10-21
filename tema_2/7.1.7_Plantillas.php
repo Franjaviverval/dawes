@@ -15,7 +15,6 @@ function getData(string $path) : array{
     return $data;
 }
 
-
 initPage('7.1.7_Plantillas');
 
 printStatement('

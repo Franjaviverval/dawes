@@ -1,0 +1,133 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+:root {
+   --color-background: #DCD;
+   --color-card: #359;
+   --color-lightFont: #DDF;
+   --color-accent: #404;
+}
+
+body {
+   background-color: var(--color-background);
+   color: var(--color-lightFont);
+}
+
+main {
+   display: flex;
+   justify-content: space-around;
+   margin: 50px;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.page-header {
+   background-color: var(--color-card);
+   padding: 15px;
+   border-bottom: 3px solid var(--color-accent);
+}
+
+.page-header__title {
+   font-size: 2.25rem;
+   text-align: center;
+}
+
+.form_container {
+   background-color: var(--color-card);
+   padding: 30px 60px;
+   width: max-content;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 40px;
+   border: 3px solid var(--color-accent);
+   border-radius: 15px;
+}
+
+.form {
+   display: grid;
+   grid-template-columns: max-content minmax(max-content, 250px);
+   gap: 15px 20px;
+}
+
+.form__title {
+   font-size: 1.75rem;
+}
+
+.form__label,
+.form__input {
+   font-size: 1.5rem;
+}
+
+.form__input {
+   text-align: center;
+}
+
+.form__nav {
+   padding-top: 15px;
+   grid-column: 1/span 2;
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+
+.form__button {
+   width: 50%;   
+   font-size: 1.5rem;
+   border-radius: 15px;
+   padding: 10px 0;
+}
+
+.data__section {
+   height: max-content;
+   background-color: var(--color-card);
+   padding: 20px;
+   flex: 1;
+   border: 3px solid var(--color-accent);
+   border-radius: 15px;
+}
+
+.table {
+   width: 100%;
+   margin: 0 auto;
+   border-collapse: collapse;
+   border: 2px solid var(--color-accent);
+   text-align: center;
+}
+
+th,
+td {
+   border: 2px solid var(--color-accent);
+   padding: 10px;
+}
+
+.table nav {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+
+.table__button {
+   background-color: transparent;
+   border: none;
+   border-radius: 50px;
+   background-repeat: no-repeat;
+   width: 40px;
+   height: 45px;
+   background-size: 90%;
+   background-position: center;
+}
+
+.table__button:hover {
+   background-color: var(--color-lightFont);
+}
+
+#button-eliminar {
+   background-image: url('../images/eliminar.png');
+}
+
+#button-edit {
+   background-image: url('../images/editar.png');
+}
