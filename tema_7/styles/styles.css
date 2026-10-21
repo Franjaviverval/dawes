@@ -65,6 +65,7 @@ main {
 .form__input {
    text-align: center;
    color: var(--color-darkFont);
+   background-color: var(--color-lightFont);
 }
 
 .form__nav {
@@ -83,8 +84,19 @@ main {
    border: 1px solid var(--color-accent);
    text-decoration: none;
    text-align: center;
-   background-color: var(--color-background);
+   background-color: var(--color-lightFont);
    color: var(--color-darkFont);
+}
+
+.form__button:hover{
+   background-color: var(--color-background);
+   outline: 1px solid var(--color-accent);
+}
+
+.form__button:active{
+   background-color: var(--color-darkFont);
+   color: var(--color-lightFont);
+   outline: 1px solid var(--color-accent);
 }
 
 .data__section {
