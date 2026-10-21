@@ -15,7 +15,7 @@
          <?php if(!$edit): ?>        
          <article class="form_container">
             <h2 class="form__title">Añadir nuevo título</h2>
-            <form action="#" method="post" class="form">               
+            <form action="index.php" method="post" class="form">               
                <label for="title" class="form__label">Título</label>
                <input type="text" name="title" id="title" class="form__input" placeholder="título">
                <label for="gender" class="form__label">Género</label>
@@ -31,7 +31,7 @@
          <?php else: ?>
             <article class="form_container">
             <h2 class="form__title">Editar</h2>
-            <form action="#" method="post" class="form">               
+            <form action="index.php" method="post" class="form">               
                <label for="title" class="form__label">Título</label>
                <input type="text" name="title" id="title" class="form__input" placeholder="título" value=" <?php echo $data[$pos]['titulo'];?> ">
                <label for="gender" class="form__label">Género</label>
