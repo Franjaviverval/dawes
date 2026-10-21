@@ -8,6 +8,7 @@
    --color-card: #359;
    --color-lightFont: #DDF;
    --color-accent: #404;
+   --color-darkFont: #224;
 }
 
 body {
@@ -63,6 +64,7 @@ main {
 
 .form__input {
    text-align: center;
+   color: var(--color-darkFont);
 }
 
 .form__nav {
@@ -74,10 +76,15 @@ main {
 }
 
 .form__button {
-   width: 50%;   
+   width: 50%;
    font-size: 1.5rem;
    border-radius: 15px;
    padding: 10px 0;
+   border: 1px solid var(--color-accent);
+   text-decoration: none;
+   text-align: center;
+   background-color: var(--color-background);
+   color: var(--color-darkFont);
 }
 
 .data__section {

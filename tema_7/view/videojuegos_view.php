@@ -42,7 +42,7 @@
                <input type="hidden" name="id" value= <?php echo $id;?>>
                <nav class="form__nav">
                   <button type="submit" class="form__button" id="button-modify">Editar</button>                   
-                  <button type="cancel" class="form__button" id="button-cancel">Cancelar</button>
+                  <a class="form__button" id="button-cancel" href="index.php">Cancelar</a>
                </nav>                             
             </form>
          </article>
