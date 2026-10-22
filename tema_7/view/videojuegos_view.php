@@ -33,11 +33,14 @@
             <h2 class="form__title">Editar</h2>
             <form action="index.php" method="post" class="form">               
                <label for="title" class="form__label">Título</label>
-               <input type="text" name="title" id="title" class="form__input" placeholder="título" value=" <?php echo $data[$pos]['titulo'];?> ">
+               <input type="text" name="title" id="title" class="form__input" placeholder="título" 
+                  value=" <?php echo htmlspecialchars($data[$pos]['titulo']);?> ">
                <label for="gender" class="form__label">Género</label>
-               <input type="text" name="gender" id="gender" class="form__input" placeholder="Plataformas" value=" <?php echo $data[$pos]['genero'];?> ">               
+               <input type="text" name="gender" id="gender" class="form__input" placeholder="Plataformas"
+                  value=" <?php echo htmlspecialchars($data[$pos]['genero']);?> ">               
                <label for="price" class="form__label">Precio</label>
-               <input type="number" name="price" id="price" class="form__input" step="0.01" min="0.0" placeholder="0.0" value= <?php echo $data[$pos]['precio'];?>>
+               <input type="number" name="price" id="price" class="form__input" step="0.01" min="0.0" placeholder="0.0"
+                  value= <?php echo htmlspecialchars($data[$pos]['precio']);?>>
                <input type="hidden" name="action" value="modify"> 
                <input type="hidden" name="id" value= <?php echo $id;?>>
                <nav class="form__nav">
@@ -76,10 +79,10 @@
                         </form>
                      </nav>
                   </td>
-                  <td><?php echo $videojuego['id']; ?></td>
-                  <td><?php echo $videojuego['titulo']; ?></td>
-                  <td><?php echo $videojuego['genero']; ?></td>
-                  <td><?php echo $videojuego['precio']; ?></td>
+                  <td><?php echo htmlspecialchars($videojuego['id']); ?></td>
+                  <td><?php echo htmlspecialchars($videojuego['titulo']); ?></td>
+                  <td><?php echo htmlspecialchars($videojuego['genero']); ?></td>
+                  <td><?php echo htmlspecialchars($videojuego['precio']); ?></td>
                </tr>
                <?php endforeach; ?>
             </tbody>

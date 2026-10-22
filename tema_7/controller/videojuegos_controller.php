@@ -38,11 +38,9 @@ class Videojuegos_controller{
    public function edit(int $id) : void{
       $database = new Videojuegos_model();
       $data = $database->leer() ?? [];
-      $database->liberar();                
-
-      $edit = true;
-      $pos = 0;
+      $database->liberar();
       
+      $pos = -1;      
       for($i = 0; $i < count($data); $i++){
          if($data[$i]['id'] === $id){
             $pos = $i;
@@ -50,6 +48,7 @@ class Videojuegos_controller{
          }
       }
 
+      $edit = $pos !== -1;
       require_once('view/videojuegos_view.php');
    }
 
