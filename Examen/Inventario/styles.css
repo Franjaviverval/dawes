@@ -1,0 +1,45 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   background-color: #CCC;
+   width: 60dvw;
+   margin: 0 auto;
+}
+
+header{
+   padding: 30px 0;
+}
+
+section {
+   margin: 30px auto;
+}
+
+.info {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.info__card {
+   background-color: #DDD;
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   border: 1px solid black;
+   width: 30%;
+}
+
+table {
+   width: 100%;
+   border: 1px solid black;
+}
+
+
+td,
+th {
+   text-align: center;
+   padding: 10px 0;
+}
