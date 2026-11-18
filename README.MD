@@ -7,6 +7,7 @@
 - [Tema 4](#tema-4)
 - [Tema 5](#tema-5)
 - [Tema 7](#tema-7)
+- [Extras](#extras)
 
 
 <div id=tema-1>
@@ -74,5 +75,14 @@
 ## Tema 7
 
 ![alt text](screenshots/tema_7/01_mvc.png)
+
+</div>
+
+<div id=extras>
+
+## Tema 7
+
+![alt text](screenshots/Extras/Examen1.png)
+![alt text](screenshots/Extras/Examen2.png)
 
 </div>
