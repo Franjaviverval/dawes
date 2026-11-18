@@ -80,7 +80,7 @@
 
 <div id=extras>
 
-## Tema 7
+## Extras
 
 ![alt text](screenshots/Extras/Examen1.png)
 ![alt text](screenshots/Extras/Examen2.png)
